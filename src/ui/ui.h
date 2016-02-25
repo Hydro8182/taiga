@@ -113,6 +113,9 @@ void OnUpdateAvailable();
 void OnUpdateNotAvailable();
 void OnUpdateFinished();
 
+void onAskForScore(int anime_id);
+
+
 }  // namespace ui
 
 #endif  // TAIGA_UI_UI_H

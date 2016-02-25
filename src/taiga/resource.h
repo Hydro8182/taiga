@@ -42,6 +42,10 @@
 #define IDD_TORRENT                             146
 #define IDD_UPDATE                              147
 #define IDD_UPDATE_NEW                          148
+
+#define IDD_SCORE								149
+#define IDD_SIZE_CBO							9999
+
 #define IDC_BUTTON_ADDFOLDER                    1000
 #define IDC_BUTTON_BROWSE                       1001
 #define IDC_BUTTON_CACHE_CLEAR                  1002

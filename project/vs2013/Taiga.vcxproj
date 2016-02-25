@@ -213,6 +213,7 @@
     <ClCompile Include="..\..\src\ui\dlg\dlg_input.cpp" />
     <ClCompile Include="..\..\src\ui\dlg\dlg_main.cpp" />
     <ClCompile Include="..\..\src\ui\dlg\dlg_main_controls.cpp" />
+    <ClCompile Include="..\..\src\ui\dlg\dlg_score.cpp" />
     <ClCompile Include="..\..\src\ui\dlg\dlg_search.cpp" />
     <ClCompile Include="..\..\src\ui\dlg\dlg_season.cpp" />
     <ClCompile Include="..\..\src\ui\dlg\dlg_settings.cpp" />
@@ -368,6 +369,7 @@
     <ClInclude Include="..\..\src\ui\dlg\dlg_history.h" />
     <ClInclude Include="..\..\src\ui\dlg\dlg_input.h" />
     <ClInclude Include="..\..\src\ui\dlg\dlg_main.h" />
+    <ClInclude Include="..\..\src\ui\dlg\dlg_score.h" />
     <ClInclude Include="..\..\src\ui\dlg\dlg_search.h" />
     <ClInclude Include="..\..\src\ui\dlg\dlg_season.h" />
     <ClInclude Include="..\..\src\ui\dlg\dlg_settings.h" />

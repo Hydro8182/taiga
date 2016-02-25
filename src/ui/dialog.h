@@ -30,7 +30,8 @@ enum Dialog {
   kDialogMain,
   kDialogSettings,
   kDialogTorrents,
-  kDialogUpdate
+  kDialogUpdate,
+  kDialogScore
 };
 
 void DestroyDialog(Dialog dialog);
@@ -41,6 +42,7 @@ void ShowDialog(Dialog dialog);
 void ShowDlgAnimeEdit(int anime_id);
 void ShowDlgAnimeInfo(int anime_id);
 void ShowDlgSettings(int section, int page);
+void showDlgScore(int anime_id);
 
 }  // namespace ui
 

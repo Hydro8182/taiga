@@ -1023,4 +1023,21 @@ void OnUpdateFinished() {
   DlgUpdate.PostMessage(WM_CLOSE);
 }
 
+void onAskForScore(int anime_id) {
+	win::TaskDialog dlg(TAIGA_APP_TITLE, TD_ICON_INFORMATION);
+	dlg.SetMainInstruction(L"Would you like rate this anime?");
+	dlg.SetContent(L"");
+	dlg.AddButton(L"Yes", IDYES);
+	dlg.AddButton(L"No", IDNO);
+	dlg.Show(DlgMain.GetWindowHandle());
+	if (dlg.GetSelectedButtonID() == IDYES)
+	{
+		showDlgScore(anime_id);
+	}
+
+
+}
+
+
+
 }  // namespace ui

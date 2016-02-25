@@ -26,6 +26,8 @@
 #include "ui/dlg/dlg_update.h"
 #include "ui/dialog.h"
 
+#include "ui/dlg/dlg_score.h"
+
 namespace ui {
 
 class DialogProperties {
@@ -70,6 +72,9 @@ void InitializeDialogProperties() {
   dialog_properties.insert(std::make_pair(
       kDialogUpdate,
       DialogProperties(IDD_UPDATE, &DlgUpdate, kDialogMain, true)));
+  dialog_properties.insert(std::make_pair(
+	  kDialogScore,
+	  DialogProperties(IDD_SCORE, &DlgScore, kDialogMain, false)));
 }
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -147,7 +152,17 @@ void ShowDlgSettings(int section, int page) {
   if (page > 0)
     DlgSettings.SetCurrentPage(static_cast<SettingsPages>(page));
 
+
+
+
   ShowDialog(kDialogSettings);
+}
+
+void showDlgScore(int anime_id) {
+	DlgAnime.SetCurrentId(anime_id);
+	DlgAnime.SetCurrentPage(kAnimePageMyInfo);
+	
+	ShowDialog(kDialogScore);
 }
 
 }  // namespace ui
